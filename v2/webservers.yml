@@ -1,0 +1,6 @@
+---
+ - hosts: webservers
+   sudo: yes
+   tasks:
+    - apt: name=apache2 state=present
+    - shell: touch ansible_was_here
